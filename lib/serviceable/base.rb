@@ -1,3 +1,6 @@
+require 'xmlsimple'
+require 'rest-client'
+
 class Serviceable::Base
   class << self
     def request(path, params={}, options={})
