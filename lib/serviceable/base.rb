@@ -11,8 +11,8 @@ class Serviceable::Base
           params: p
       }.merge(options)
       u = url+path
-      puts "u: #{u} #{o.inspect}"
-      logger.info "u: #{u} #{o.inspect}"
+      # puts "u: #{u} #{o.inspect}"
+      # logger.info "u: #{u} #{o.inspect}"
       RestClient.get u, o
     end
 
